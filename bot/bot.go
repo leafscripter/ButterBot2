@@ -30,7 +30,6 @@ func newMessage(discord *discordgo.Session, message *discordgo.MessageCreate) {
 }
 
 func Run() {
-	// discord, err := discordgo.New("Bot" + "MTA1MDcwMTM4NDY3ODM3NTQ1NA.GBDQoT._dH6XMF9PcAkZy-YIuuNUqsm_odNZVi-3RXZI0")
 	discord, err := discordgo.New("Bot " + BotToken)
 
 	if err != nil {
