@@ -16,7 +16,11 @@ func main() {
 		log.Fatal(err)
 	}
 
-	bot_token := os.Getenv("BOT_TOKEN")
-	bot.BotToken =  bot_token
+	botToken := os.Getenv("BOT_TOKEN")
+	guildID := os.Getenv("GUILD_ID")
+
+	bot.Token = botToken
+	bot.GuildID = guildID
+
 	bot.Run()
 }
